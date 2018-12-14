@@ -1,22 +1,36 @@
 {
-    "name": "philo/laravel-translate",
-    "description": "Translation manager for Laravel 5",
-    "keywords": ["laravel", "translate", "translation", "manager"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Philo Hermans",
-            "email": "me@philohermans.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.0",
-        "illuminate/support": "5.*"
-    },
-    "autoload": {
-        "psr-0": {
-            "Philo\\Translate\\": "src/"
-        }
-    },
-    "minimum-stability": "dev"
+  "name": "philo/laravel-translate",
+  "description": "Translation manager for Laravel 5",
+  "keywords": [
+    "laravel",
+    "translate",
+    "translation",
+    "manager"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Philo Hermans",
+      "email": "me@philohermans.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "illuminate/support": "5.*",
+    "illuminate/console": "5.*",
+    "symfony/finder": "4.2.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Philo\\Translate\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Philo\\Translate\\TranslateServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
 }
